@@ -28,18 +28,18 @@ function addRandomGreeting() {
   console.log("Helloooo");
 }
 
-// function randomImage(){
-//     path = path || 'images/';
-//     const img_container = document.getElementById('img-container');
-//     var imgAr = new imgArray(3);
-//     img[0] = 'city-birdeye.jpg';
-//     img[1] = 'night-city.jpg';
-//     img[2] = 'nightcity-streeta2.jpg';
+function randomImage(){
+    path = path || 'images/';
+    const img_container = document.getElementById('img-container');
+    var imgAr = new imgArray(3);
+    img[0] = 'city-birdeye.jpg';
+    img[1] = 'night-city.jpg';
+    img[2] = 'nightcity-streeta2.jpg';
     
-//     var num = Math.floor( Math.random() * imgAr.length );
-//     img_container.src = 'images/' + img[num];
-//     console.log(num);
-// }
+    var num = Math.floor( Math.random() * imgAr.length );
+    img_container.src = 'images/' + img[num];
+    console.log(num);
+}
 
 // function getRandomImage(imgAr, path) {
 //     path = path || 'images/'; // default path here
