@@ -25,4 +25,26 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+  console.log("Helloooo");
 }
+
+// function randomImage(){
+//     path = path || 'images/';
+//     const img_container = document.getElementById('img-container');
+//     var imgAr = new imgArray(3);
+//     img[0] = 'city-birdeye.jpg';
+//     img[1] = 'night-city.jpg';
+//     img[2] = 'nightcity-streeta2.jpg';
+    
+//     var num = Math.floor( Math.random() * imgAr.length );
+//     img_container.src = 'images/' + img[num];
+//     console.log(num);
+// }
+
+// function getRandomImage(imgAr, path) {
+//     path = path || 'images/'; // default path here
+//     var num = Math.floor( Math.random() * imgAr.length );
+//     var img = new imgArray(4)imgAr[ num ];
+//     var imgStr = '<img src="' + path + img + '" alt = "">';
+//     document.write(imgStr); document.close();
+// }
