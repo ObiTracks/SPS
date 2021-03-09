@@ -25,4 +25,17 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+  console.log("Helloooo");
+}
+
+function randomImage(){
+    const imgContainer = document.getElementById('img-container');
+    var imgAr = new Array();
+    imgAr[0] = 'images/city-birdeye.jpg';
+    imgAr[1] = 'images/night-city.jpg';
+    imgAr[2] = 'images/nightcity-streeta2.jpg';
+    var num = Math.floor( Math.random() * imgAr.length );
+
+    imgContainer.src = imgAr[num];
+    console.log(num);
 }
