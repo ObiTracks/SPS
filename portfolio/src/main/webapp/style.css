@@ -2,12 +2,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     padding: 0;
     margin: 0;
     position: relative;
     background: linear-gradient(to right, #4b6cb7, #182848);
 }
+
 #content {
     margin-left: auto;
     margin-right: auto;
@@ -16,9 +18,11 @@ body{
     flex-direction: column;
     align-items: center;
   }
+
 #greeting-container {
     margin-top: 20px;
 }
+
 #navbar{
     display: inline-block;
     width: 100%;
@@ -33,6 +37,7 @@ body{
     font-weight: 800;
     text-transform: uppercase;
 }
+
 img{
     height: auto;
     min-height: 300px;
@@ -41,6 +46,7 @@ img{
     border: solid black 2px;
     border: solid rgb(0, 255, 76) 6px;
 }
+
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
@@ -49,6 +55,7 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 p{
     font-family:'Lucida Sans', 'Lucida Sans Regular',
     'Lucida Grande', 'Lucida Sans Unicode',
@@ -57,6 +64,7 @@ p{
     margin: 10px 0;
     color: white;
 }
+
 a{
     color: red;
 }
@@ -69,6 +77,7 @@ button{
     border-radius: 10px;
     background: yellow;
 }
+
 button:hover{
     cursor: pointer;
 }

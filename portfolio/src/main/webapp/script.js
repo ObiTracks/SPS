@@ -29,21 +29,13 @@ function addRandomGreeting() {
 }
 
 function randomImage(){
-    const img_container = document.getElementById('img-container');
+    const imgContainer = document.getElementById('img-container');
     var imgAr = new Array();
     imgAr[0] = 'images/city-birdeye.jpg';
     imgAr[1] = 'images/night-city.jpg';
     imgAr[2] = 'images/nightcity-streeta2.jpg';
     var num = Math.floor( Math.random() * imgAr.length );
 
-    img_container.src = imgAr[num];
+    imgContainer.src = imgAr[num];
     console.log(num);
 }
-
-// function getRandomImage(imgAr, path) {
-//     path = path || 'images/'; // default path here
-//     var num = Math.floor( Math.random() * imgAr.length );
-//     var img = new imgArray(4)imgAr[ num ];
-//     var imgStr = '<img src="' + path + img + '" alt = "">';
-//     document.write(imgStr); document.close();
-// }
