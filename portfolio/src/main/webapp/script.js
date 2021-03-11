@@ -42,8 +42,16 @@ function randomImage(){
 
 async function showSerletResponse() {
   const responseFromServer = await fetch('/testing');
-  const textFromResponse = await responseFromServer.text();
+  const messagesObject = await responseFromServer.text();
+
+  console.log(messagesObject);
+  Object.keys(messagesObject).forEach(function(message,index){
+      console.log(message);
+      var line = document.createElement("P");
+      line.innerText = message;
+      document.body.appendChild(line);
+  })
 
   const servletContainer = document.getElementById('servlet-text');
-  servletContainer.innerText = textFromResponse;
+  servletContainer.innerText = messagesObject;
 }
