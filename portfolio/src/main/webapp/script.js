@@ -39,3 +39,11 @@ function randomImage(){
     imgContainer.src = imgAr[num];
     console.log(num);
 }
+
+async function showSerletResponse() {
+  const responseFromServer = await fetch('/testing');
+  const textFromResponse = await responseFromServer.text();
+
+  const servletContainer = document.getElementById('servlet-text');
+  servletContainer.innerText = textFromResponse;
+}
