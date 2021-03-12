@@ -40,18 +40,18 @@ function randomImage(){
     console.log(num);
 }
 
-async function showSerletResponse() {
+async function randomMessage() {
   const responseFromServer = await fetch('/testing');
-  const messagesObject = await responseFromServer.text();
-
+  const messagesObject = await responseFromServer.json();
   console.log(messagesObject);
-  Object.keys(messagesObject).forEach(function(message,index){
-      console.log(message);
-      var line = document.createElement("P");
-      line.innerText = message;
-      document.body.appendChild(line);
-  })
 
-  const servletContainer = document.getElementById('servlet-text');
-  servletContainer.innerText = messagesObject;
+  const navbarMessage = document.getElementById("message");
+  navbarMessage.innerText = "Hello";
+
+  var messageArray = [messagesObject.message1, messagesObject.message2,
+        messagesObject.message3];
+  var index = Math.floor(Math.random() * messageArray.length);
+  console.log(messageArray);
+
+  navbarMessage.innerText = messageArray[index];
 }
