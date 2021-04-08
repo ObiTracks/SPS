@@ -46,7 +46,6 @@ async function randomMessage() {
   console.log(messagesObject);
 
   const navbarMessage = document.getElementById("message");
-  navbarMessage.innerText = "Hello";
 
   var messageArray = [messagesObject.message1, messagesObject.message2,
         messagesObject.message3];
@@ -55,3 +54,4 @@ async function randomMessage() {
 
   navbarMessage.innerText = messageArray[index];
 }
+
