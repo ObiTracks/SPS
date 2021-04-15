@@ -9,6 +9,8 @@
   <body>
     <div id="navbar">
       <div>Obi Ihej</div>
+      <button onclick="randomMessage()">Random Message:</button>
+      <h5 id='message'></h5>
     </div>
     
     <div id="content">
@@ -23,6 +25,27 @@
       <div id="greeting-container"></div>
     
     <img src="/images/city-birdeye.jpg" id="img-container"/>
+
+    <form action="/form-handler" method="POST">
+        <p>Enter some text here:</p>
+        <textarea name="text-input">hello world</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
+
+    <form action="/contact" method="POST">
+        <p>Name:</p>
+        <textarea name="name">Your Name Here</textarea>
+        <p>Email:</p>
+        <textarea name="email">Your Email Here</textarea>
+        <p>Phone Number</p>
+        <textarea name="number">Your Phone Number Here</textarea>
+        <p>Got Beef? Leave it here.</p>
+        <textarea name="jokes">Got jokes or beef, leave it here</textarea>
+        <br/>
+        <input type="submit" />
+    </form>
+
     </div>
   </body>
 </html>

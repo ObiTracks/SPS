@@ -39,3 +39,19 @@ function randomImage(){
     imgContainer.src = imgAr[num];
     console.log(num);
 }
+
+async function randomMessage() {
+  const responseFromServer = await fetch('/testing');
+  const messagesObject = await responseFromServer.json();
+  console.log(messagesObject);
+
+  const navbarMessage = document.getElementById("message");
+
+  var messageArray = [messagesObject.message1, messagesObject.message2,
+        messagesObject.message3];
+  var index = Math.floor(Math.random() * messageArray.length);
+  console.log(messageArray);
+
+  navbarMessage.innerText = messageArray[index];
+}
+
